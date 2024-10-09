@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+tbody tr:hover{
+  background-color: #eef2ff !important;
+ 
+}
+
+h5{
+  z-index: -1;
+}

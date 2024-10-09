@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+/* POST JOB FORM */
+.headingtwo2 {
+  display: flex;
+  justify-content: center;
+  /* padding: 15px; */
+  /*changed*/
+  /* margin: 60px; */
+  text-align: center;
+  color: #000000;
+  /* margin-top: 20px; */
+  /*changed*/
+  font-size: 18px;
+  font-weight: 700;
+  position: sticky;
+  top: 50px;
+  /* margin-bottom: 3px; */
+  margin-left: 37%;
+  /* padding-bottom: 3rem; */
+}
+
+.Container2 {
+  position: relative;
+  /* height: 80vh; */
+  overflow: hidden;
+  height: 100%;
+  flex: 1;
+  width: 98%;
+  margin-top: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(4, 4, 4, 0.18);
+  /* overflow: auto; */
+  margin-left: 12px;
+}
+
+/* NOTIFICATION BADGE */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -2px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+/* EDIT CONTAINER STYLES */
+/* .headingtwo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #000000;
+				margin-top: 55px;
+			} */
+
+.forms1 {
+  background-color: #fff;
+  transition: 0.3s ease;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 6px;
+  padding: 10px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 15px; */
+  column-gap: 15px;
+  /*changed*/
+  row-gap: 10px;
+  /*changed*/
+}
+
+.input-field {
+  display: flex;
+  /* width: calc(100% / 3 - 15px); */
+  flex-direction: column;
+  margin: 2px 0;
+  flex: 1 0 33.33%;
+}
+
+.input-field label {
+  font-size: 13px;
+  font-weight: 505;
+  color: #2e2e2e;
+  margin-bottom: 0.1rem;
+}
+
+.input-field input,
+select,
+textarea {
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 15px;
+}
+
+/* .input-field textarea {
+				height: 42px;
+			} */
+
+.input-field input :focus,
+.input-field select:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field select {
+  color: #707070;
+}
+
+input[type="date"],
+input[type="file"],
+input[type="checkbox"] {
+  color: #707070;
+}
+
+.input-field input[type="date"]:valid {
+  color: #333;
+}
+
+input[type="checkbox"] {
+  /* outline: 1px solid black; */
+  vertical-align: middle;
+  height: 25px;
+  width: 15px;
+}
+
+.buttons2 {
+  height: auto;
+  margin-top: 10px;
+}
+
+#submits2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  max-width: 160px;
+  width: 100%;
+  padding: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  /* margin: 5px 0; */
+  background-color: #32406d;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+/* input[type='submit']:hover {
+			background-color: #555;
+		} */
+
+.error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.required-field {
+  color: red;
+  margin-left: 4px;
+}
+.candiedit{
+  display: flex;
+   margin: 35px 0 5px;
+    padding-left: 20px;
+}
+/* .message {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 10px;
+				border-radius: 5px;
+				margin-bottom: 10px;
+				height: 30px;
+			}
+
+			.success {
+				background-color: #c1e2b3;
+				color: #1b5e20;
+			}
+
+			.error {
+				background-color: #ffb3b3;
+				color: #c62828;
+			} */
+
+/* For tablet screens */
+@media (max-width: 750px) {
+  /* .container2 {
+    overflow: auto;
+  } */
+
+  .input-field {
+    /* width: calc(100% / 2 - 15px); */
+    flex-basis: 50%;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 767px) {
+  .forms1 {
+    max-width: fit-content;
+    margin: 10px;
+  }
+
+  .input-field {
+    /* width: 100%; */
+    flex-basis: 100%;
+  }
+
+  .headingtwo {
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .wrapper .section .top_navbar .heading h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    /* margin-right: 150px; */
+  }
+
+  .h1 {
+    font-size: 2px;
+  }
+
+  .resume1 {
+    max-width: 98%;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .headingtwo {
+    font-size: 15px;
+  }
+}
+
+.required-field {
+  color: red;
+  margin-right: 3px;
+}
+
+/* Error message styles */
+small {
+  font-size: 12px;
+}
+
+.input-field.error input,
+.input-field.error select {
+  border-color: #e74c3c;
+}
+
+.input-field.error .currency-input {
+  border-color: #e74c3c;
+}
+
+.input-field small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.input-field.error small {
+  visibility: visible;
+}
+
+/* sidebar Dropdown */
+/* .dropdown-sidebar:hover .dropdown-menu-sidebar {
+				display: block;
+			}
+
+			.dropdown-menu-sidebar {
+				display: none;
+				color: #333333;
+				text-align: right;
+				list-style: none;
+			} */
+
+/* currency type */
+.currency-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.currency-input select,
+.currency-input input {
+  border: none;
+  padding: 3px;
+  font-size: 12px;
+  background-color: white;
+}
+
+.currency-input select {
+  background-color: white;
+  border-right: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #555;
+  cursor: pointer;
+}
+
+.currency-input input {
+  flex: 1;
+  padding-left: 5px;
+}
+
+/* ----------- */
+#notice_period_details,
+#holding_offer_details {
+  display: none;
+}
+
+#last_working_date_div,
+#notice_period_months_div,
+#total_div,
+#package_in_lpa_div {
+  display: none;
+}
+
+/* exp-input-div */
+.exp-input-div {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.exp-input-div select {
+  background-color: white;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #555;
+  cursor: pointer;
+  font-size: 12px;
+  width: 50%;
+}
+@media screen and (max-height: 680px) and (min-width: 1000px) {
+  /* .Container2 {
+    height: 76vh !important;
+  } */
+
+  /* .forms1 {
+    height: 71vh !important;
+  } */
+}
+@media screen and  (max-width: 542px) {
+ 
+  .Container2 {
+    max-height: 70vh !important;
+  }
+ .headingtwo2{
+  margin-left: 9%;
+ }
+}

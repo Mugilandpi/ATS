@@ -1,0 +1,464 @@
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background: #cad1ff;
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+} */
+
+* {
+  list-style: none;
+  text-decoration: none;
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+/* Top nav bar */
+/* .wrapper .section {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+
+body.active .wrapper .sidebar {
+    left: -225px;
+}
+
+body.active .wrapper .section {
+    margin-left: 0;
+    width: 100%;
+} */
+
+/* POST JOB FORM */
+.headingtwo3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  /*changed*/
+  /* margin-top: 20px; */
+  text-align: center;
+  color: #000000;
+  /* margin-top: 20px; */
+  /*changed*/
+  font-size: 18px;
+  font-weight: 700;
+  position: sticky;
+  top: 50px;
+  /* margin-bottom: 22px; */
+  margin-left: 4%;
+}
+
+.Container {
+  overflow: hidden;
+  position: relative;
+  /* height: 80vh; */
+  /* height:100%; */
+  flex:1;
+  width: 98%;
+  /* margin-top: -6px;  */
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(4, 4, 4, 0.18);
+  margin-left: 12px;
+}
+
+.forms {
+  background-color: #fff;
+  transition: 0.3s ease;
+  padding: 9px;
+  overflow: auto;
+  height: 100%;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  /*changed*/
+  row-gap: 9px;
+  /*changed*/
+}
+
+.JS {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 33.33%;
+}
+
+.JS label {
+  font-size: 13px;
+  /*changed*/
+  font-weight: 480;
+  color: #2e2e2e;
+  margin-bottom: 0.1rem;
+  /*changed*/
+}
+
+.JS input,
+select,
+textarea {
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 3px 15px;
+  /* height: 42px; */
+  height: 30px;
+  /* margin: 4px 0;  */
+}
+
+.JS input:focus,
+.JS select:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.JS select {
+  color: #707070;
+}
+
+input[type="date"],
+input[type="file"],
+input[type="checkbox"] {
+  color: #707070;
+}
+
+.JS input[type="date"]:valid {
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5px;
+}
+
+/* input[type='submits'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    max-width: 160px;
+    width: 100%;
+    padding: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #333;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-top: 10px;
+    
+} */
+#submits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  max-width: 160px;
+  width: 100%;
+  padding: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #32406d;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* 
+input[type='submit']:hover {
+    background-color: #555;
+} */
+
+.error-message {
+  color: #ff0000;
+}
+
+.required-field {
+  color: red;
+  margin-right: 4px;
+}
+
+/* .message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        height: 30px;
+    }
+
+    .success {
+        background-color: #c1e2b3;
+        color: #1b5e20;
+    }
+
+    .error {
+        background-color: #ffb3b3;
+        color: #c62828;
+    } */
+
+/* For desktop screens */
+@media screen and (min-width: 1027px) {
+  .Container {
+    /* overflow: auto; */
+  }
+
+  /* .forms {
+        height: auto;
+    } */
+}
+.editcandidate {
+  overflow: auto;
+  height: 85vh;
+}
+
+/* For tablet screens */
+
+/* For mobile screens */
+@media screen and (max-width: 767px) {
+  .JS {
+    /* width: calc(100% / 2 - 15px); */
+    flex-basis: 50%;
+  }
+
+  .h1 {
+    font-size: 2px;
+  }
+}
+
+@media (max-width: 550px) {
+  .JS {
+    flex-basis: 100%;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+}
+.multiselect-dropdown-list {
+  z-index: 1000;
+  height: 5.6rem;
+}
+/* Form Validation styles */
+.JS.error input,
+.JS.error select,
+.JS.error textarea {
+  border-color: #e74c3c;
+}
+
+.JS small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.JS.error small {
+  visibility: visible;
+}
+
+.JS.error .currency-input {
+  border-color: #e74c3c;
+}
+
+.currency-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.currency-input select,
+.currency-input input {
+  border: none;
+  padding: 3px;
+  font-size: 12px;
+  background-color: white;
+}
+
+.currency-input select {
+  background-color: white;
+  border-right: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #555;
+  cursor: pointer;
+}
+
+.currency-input input {
+  flex: 1;
+  padding-left: 5px;
+}
+
+#submit[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+@media only screen and (max-width: 768px) {
+  .group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Media query for larger screens (PCs) */
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1024px) {
+  /* Adjust sidebar width for desktop */
+  .sidebar {
+    width: 250px; /* Adjust as needed */
+  }
+
+  /* Adjust section width to accommodate the sidebar */
+  .section {
+    margin-left: 250px; /* Same as sidebar width */
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Base styles for the sidebar and section */
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.section {
+  flex-grow: 1;
+  padding:  20px 20px 15px;
+}
+
+.sidebar {
+  width: 250px;
+  /* other styles */
+}
+
+/* Section */
+.section {
+  margin-left: 250px; /* Same width as sidebar */
+  /* other styles */
+}
+
+/* Media queries for responsiveness */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+  /* Sidebar */
+  .sidebar {
+    width: 100%;
+    /* other styles for smaller screens */
+  }
+
+  /* Section */
+  .section {
+    margin-left: 0; /* No margin on smaller screens */
+    /* other styles for smaller screens */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  /* Adjust styles for smaller devices */
+}
+.currency-input {
+  display: flex;
+  align-items: center;
+}
+
+.small-select {
+  width: 100px; /* Adjust the width as needed */
+  margin-right: 10px; /* Add spacing between select and input */
+}
+
+.large-input {
+  flex-grow: 1; /* Take remaining space */
+  width: auto; /* Let it grow based on content */
+}
+@media screen and (max-height: 680px) and (min-width: 1000px) {
+  /* .Container {
+    height: 76vh !important;
+  } */
+
+  /* .forms {
+    height: 71vh !important;
+    overflow: auto;
+  } */
+
+  .buttons {
+    margin-top: 6px;
+  }
+}
+
+.recruiter-selection {
+  position: relative;
+}
+
+.optionListContainer {
+  position: absolute !important;
+  height: inherit;
+  bottom: 5px;
+  width: 50% !important;
+  /* background-color: red !important; */
+}
+.editjobpost{
+  display: flex; 
+  margin: 30px 0 5px; 
+  padding-left: 20px;
+}
+@media screen and  (max-width: 542px) {
+ 
+  .Container {
+    max-height: 70vh !important;
+  }
+  .editjobpost{
+    justify-content: left;
+  }
+ .headingtwo3{
+  padding-top: 4%;
+  padding-left: 15% !important;
+ }
+ body.active .Container,body.active .editjobpost,body.active .buttons
+ {
+
+    display:flex !important;
+
+ }
+
+ #recru{
+  margin-top: 5px !important;
+ }
+ body.barside2 .Container,body.barside2 .editjobpost,body.barside2 .buttons
+   {
+    display: none ;
+  }
+}

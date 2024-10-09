@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+.joblisthead {
+  display: flex;
+  padding-top: 30px;
+  text-align: center;
+  justify-content: center;
+  color: #000000;
+  font-weight: 500;
+  /* font-size: 10px; */
+}
+
+.table .managmentjob th {
+  font-size: 13px;
+}
+.table {
+  width: 100%;
+}
+.table td {
+  border: 1px solid #ddd;
+  height: 45px;
+  white-space: nowrap; /* Prevents wrapping content */
+  overflow: hidden; /* Hides overflow content */
+  text-overflow: ellipsis; /* Displays ellipsis (...) for overflow text */
+}
+.container {
+  position: relative;
+  width: 100%;
+  /* height: 80vh; */
+  margin-top: 60px;
+  padding: 5px 5px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* overflow: auto; */
+  display: grid;
+  overflow: hidden;
+  /* margin: 50px auto; */
+  flex: 1;
+}
+/* Style the container and table container */
+.container {
+  /* height: 74vh; */
+  margin-top: 0px;
+  overflow: hidden; /* Hide overflow from container */
+}
+
+#job_listing_containter {
+  margin-top: 15px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Style the table */
+.table {
+  table-layout: fixed;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Style the table header */
+.managmentjob {
+  /* Ensure the header is fixed */
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: #f5f5f5;
+}
+
+/* Style the table body to allow vertical scrolling */
+.table-body {
+  max-height: 60vh; /* Set max-height to enable scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+/* For desktop screens */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for elements inside the table */
+  .joblisthead {
+    font-size: 16px;
+  }
+  .pagination_button {
+    font-size: 14px;
+  }
+  /* Add more styles as needed */
+}
+
+#job_listing_containter::-webkit-scrollbar {
+  width: 10px;
+}
+#job_listing_containter::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+#job_listing_containter::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+@media screen and (max-height: 680px) and (min-width: 1000px) {
+  /* .container {
+    height: 68vh !important;
+    margin-bottom: 40px;
+  } */
+  .section {
+    margin-left: 190px !important;
+  }
+
+  /* .pagnBar {
+    margin-top: -38px !important;
+  } */
+}
+
+.view_jd_option {
+  cursor: pointer;
+}
+
+.avoid_view_jd_option {
+  cursor: not-allowed;
+}
+@media screen and (max-width: 767px) {
+  #theader{
+    margin-top: 0px !important;
+  }
+  .container {
+    margin-top: 0px !important;
+}
+@media screen and (max-width: 767px) {
+  .trash-icon {
+    padding:0px !important;
+  }
+}
+/* .pagnBar{
+  margin-left: -30px;
+} */
+}
+
+@media only screen and (max-width:542px){
+  body.active .container,
+  body.active .joblisthead{
+     display:flex !important;
+ 
+  }
+ 
+  body.barside2 .mobiledash, body.barside2 .users,
+   body.barside2  .dashcontainer, 
+   body.barside2 .dashbottom,body.active .container,body.active .joblisthead {
+    display: none ;
+  }
+
+  .container {
+    max-height: 66vh; 
+  
+  }
+  .container_rc{
+    max-height:66vh;
+  }
+
+}
+
+@media screen and (min-width:320px) and (max-width:375px){
+  .searching{
+    width: 200px !important;
+  }
+  .job_status{
+    margin-left: -10px !important;
+  }
+}
+@media screen and (min-width:375px) and (max-width:425px){
+  .searching{
+    width: 250px !important;
+  }
+  .job_status{
+    margin-left: -10px !important;
+  }
+}

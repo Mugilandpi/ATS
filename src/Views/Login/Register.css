@@ -1,0 +1,156 @@
+h1,
+.alert {
+  text-align: center;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.logins {
+  max-width: 500px;
+  margin-left: 13rem;
+  margin-top: 0rem;
+  border-radius: 15px;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#name,
+#pass,
+#user,
+#email {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 45px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background: #32406d;
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: #32406d;
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: auto;
+}
+/* .btn2 {
+				width: 100%;
+				padding: 10px;
+				background-color: #333;
+				color: #fff;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			} */
+
+.btn2:hover {
+  background-color: #555;
+}
+
+/* For desktop screens */
+@media screen and (min-width: 1024px) {
+  body {
+    background-size: 100% 100%; /* Keep the original size */
+  }
+}
+
+/* For tablet screens */
+@media screen and (max-width: 1023px) {
+  body {
+    background-size: 100%; /* Cover the container */
+  }
+
+  .logins {
+    margin-top: 0px;
+    padding-bottom: 20px;
+    margin-left: 0;
+  }
+
+  img.logo {
+    height: 60px; /* Adjust the height as needed */
+    width: 90px; /* Adjust the width as needed */
+    margin-top: 10px; /* Adjust the margin as needed */
+    margin-left: 40rem; /* Adjust the margin as needed */
+    padding-bottom: 10px;
+  }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 767px) {
+  body {
+    background-size: 100%; /* Auto size based on the image's dimensions */
+  }
+
+  .logins {
+    margin-top: 15px;
+    padding-bottom: 20px;
+    margin-left: 0;
+    height: 30rem;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  span {
+    /* font-size: 10px; */
+    margin-top: -6px;
+  }
+
+  img.logo {
+    height: 40px; /* Adjust the height as needed */
+    width: 64px; /* Adjust the width as needed */
+    margin-top: 10px; /* Adjust the margin as needed */
+    margin-left: 16rem; /* Adjust the margin as needed */
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 542px) {
+  .logins {
+    width: 100%;
+    margin-left: 0rem;
+    margin-top: 5rem;
+    border-radius: 15px;
+    padding: 20px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}

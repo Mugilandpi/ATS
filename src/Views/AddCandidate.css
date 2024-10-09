@@ -1,0 +1,288 @@
+.addCandidateForm {
+  background-color: #fff;
+  transition: 0.3s ease;
+  overflow: auto;
+  height: 100%;
+  /* height: 75vh; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 6px;
+  padding: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #cad1ff;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+.headingtwo1 {
+  display: flex;
+  justify-content: center;
+  /* padding: 5px; */
+  /*changed*/
+  /* margin: 60px; */
+  text-align: center;
+  color: #000000;
+  /* margin-top: 20px; */
+  /*changed*/
+  font-size: 18px;
+  font-weight: 700;
+  position: sticky;
+  top: 50px;
+  /* margin-bottom: 20px; */
+  margin-left: 37%;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  /*changed*/
+  row-gap: 9px;
+  /*changed*/
+}
+
+.JS {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 33.33%;
+}
+
+.detailedJD {
+  font-size: 13px;
+  /*changed*/
+  font-weight: 480;
+  color: #2e2e2e;
+  margin-bottom: 10px;
+  /*changed*/
+}
+
+#detailed_jd1 {
+  height: 38px;
+  padding: 0px 8px;
+}
+
+.JS input,
+select,
+textarea {
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 3px 15px;
+  /* height: 42px; */
+  height: 30px;
+  /* margin: 4px 0;  */
+}
+
+#detailed_jd {
+  height: 39px;
+  padding: 3px 8px 3px 8px;
+}
+
+.JS input:focus,
+.JS select:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.JS select {
+  color: #707070;
+}
+
+input[type="date"],
+input[type="file"],
+input[type="checkbox"] {
+  color: #707070;
+}
+
+.JS input[type="date"]:valid {
+  color: #333;
+}
+
+.input_style {
+  height: 28px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 3px 15px;
+}
+
+.addCandidateContainer {
+  overflow: auto;
+  position: relative;
+  flex: 1;
+  /* height: 80vh; */
+  width: 98%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(4, 4, 4, 0.18);
+
+  margin-left: 12px;
+}
+
+.addCandidatesubContainer {
+  overflow: hidden;
+  
+  /* height: 80vh; */
+  /* flex: 1; */
+}
+
+.addCandidateForm {
+  /* background-color: #fff;
+  transition: 0.3s ease;
+  padding: 14px; */
+  overflow-y: auto;
+}
+.addCandidateButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 7px; */
+  margin-top: 10px;
+  /* height: 30px; */
+}
+
+#addCandidateSubmit {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 160px;
+  /* padding: 3px; */
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #32406d;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  margin-top: 0px;
+  /* margin-bottom: 0px; */
+}
+#details {
+  border: 1px solid #ddd;
+  font-size: 8px;
+  /* margin: auto; */
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  border-collapse: collapse;
+}
+
+#th,
+#td {
+  height: 25px;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  /* border: 1px solid #ddd; */
+}
+
+#th {
+  text-align: left;
+  width: 160px;
+}
+
+#td {
+  font-size: 12px;
+}
+
+@media screen and (max-height: 680px) and (min-width: 1000px) {
+  /* .addCandidateContainer {
+    height: 76vh !important;
+  } */
+
+  /* .addCandidateForm {
+    height: 71vh !important;
+  } */
+}
+
+#details th{
+  padding-left: 10px;
+}
+#details td{
+  padding-left: 10px;
+}
+
+/* @media screen and (max-width: 767px) {
+  .input_style{
+    width: 300px !important;
+  }
+  .input_styles{
+    width: 150px !important;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .addCandidateForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .addCandidateForm > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .addCandidateForm label {
+    margin-bottom: 5px; 
+  }
+
+  .currency-input {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+@media screen and  (max-width: 542px) {
+  .addCandidateContainer {
+    max-height: 70vh !important;
+  }
+ .headingtwo{
+  margin-left: 5% !important;
+ }
+
+ .back-button{
+      margin-top: 3% !important;
+ }
+}
+@media screen and (min-width:320px) and (max-width:375px){
+  .headingtwo{
+    font-size: 18px !important;
+  }
+  .addCandidateContainer{
+    overflow: hidden !important;
+  }
+  .input_style{
+    padding: 0 7px !important;
+  }
+}
+@media screen and (min-width:375px) and (max-width:425px){
+  .addCandidateContainer{
+    overflow: hidden !important;
+  }
+}

@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+.candidate-container {
+  color: #333;
+  padding: 50px;
+  height: 100vh;
+  overflow: auto;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NOTIFICATION BADGE */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -2px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+/* CANDIDATE DETAILS */
+
+.candidate-container h1 {
+  text-align: center;
+  color: #000000;
+}
+
+.candidate-container h3 {
+  font-size: 20px;
+}
+
+.candidate-container a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.candidate-container a:hover {
+  text-decoration: underline;
+}
+
+.details {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 1300px;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 15px;
+  /* margin: 30px auto 20px auto; */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.export-excel {
+  height: 35px;
+  max-width: 150px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #32406d;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.export-excel:hover {
+  background-color: #32406d;
+}
+
+.vertical-container {
+  /* max-width: 1300px; */
+  /*max-height: 600px; */
+  width: 100%;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 0px auto 5px auto;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-column {
+  margin-right: 5px;
+  padding: -25px;
+  overflow: auto;
+}
+
+.vertical-table {
+  font-size: 15px;
+  border-collapse: collapse;
+  min-width: 18rem;
+  height: 20;
+  margin-top: 5px;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.vertical-table th,
+.vertical-table td {
+  padding: 5px;
+  text-align: left;
+  color: #000000;
+  /* border-bottom: 1px solid #ddd; */
+  border: 1px solid black;
+}
+
+/* td {
+    font-size: 13px;
+    height: 45px;
+} */
+
+th {
+  font-size: 13px;
+}
+
+.head-cand {
+  padding-left: 19.5rem;
+}
+
+/* tablet size */
+@media screen and (max-width: 767px) {
+  .vertical-container {
+    flex-direction: column;
+    /* align-items: center;
+            justify-content: center; */
+    /* overflow: auto; */
+  }
+
+  .wrapper .section .top_navbar .heading h1 {
+    font-size: 18px;
+    margin-top: 5px;
+    /* margin-right: 150px; */
+  }
+}
+
+/* sidebar Dropdown */
+.dropdown-sidebar:hover .dropdown-menu-sidebar {
+  display: block;
+}
+
+.dropdown-menu-sidebar {
+  display: none;
+  color: #333333;
+  text-align: right;
+  list-style: none;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 547px) {
+  .vertical-table {
+    font-size: 14px;
+  }
+
+  .details {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+
+  /* If you want to adjust the width of the vertical-container */
+  .vertical-container {
+    flex-direction: column;
+    overflow-x: scroll;
+  }
+
+  /* If you want to adjust the width of the vertical-column */
+  .vertical-column {
+    margin-right: 0;
+    /* overflow: auto; */
+  }
+
+  .heading-container {
+    flex-direction: column;
+  }
+
+  .candidate-container {
+    padding: 0px;
+    padding-top: 80px;
+    overflow: hidden;
+    /* Ensure there's no padding pushing the scrollbar in */
+    margin: 0;
+  }
+
+  .bottom-btn {
+    margin-top: 10px;
+  }
+
+  .candidate-container h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .head-cand {
+    padding-left: 0;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+}
+
+.btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  /* max-width: 200px; */
+  /* width: 100%; */
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 25px 0;
+  background-color: #32406d;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  margin: auto;
+  text-decoration: none;
+  /* Added text-decoration for the link style */
+}
+
+.btn2:hover {
+  background-color: #555;
+  text-decoration: none;
+  /* Added text-decoration for the link style */
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

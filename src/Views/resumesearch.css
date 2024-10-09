@@ -1,0 +1,46 @@
+/* Style for the input field */
+.profile-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+/* Style for the dropdown list */
+.dropdown-list {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+/* Style for each dropdown item */
+.dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for each dropdown item */
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Style for the 'No profiles found' item */
+.no-results {
+    color: #888;
+}

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+/* body {
+   font-family: 'Poppins', sans-serif;
+   background: #cad1ff;
+   background-size: cover;
+   background-origin: border-box;
+   background-position: center;
+   background-attachment: fixed;
+   overflow: hidden;
+} */
+
+.btn2_EJS {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 35px;
+  max-width: 200px;
+  width: 35%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+  margin-left: 25%;
+  background-color: #32406d;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.card_EJS {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 95vh;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+.statusleft{
+  display: flex;
+  margin-top: 30px;
+  padding-top: 20px;
+  /*alignItems:"left"*/ 
+   padding-left: 20px;
+}
+.ejs {
+  font-size: 16px;
+  text-align: left;
+}
+
+.select {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.p-4 {
+  padding: 1.5rem !important;
+}
+.card_body table {
+  padding: 0 100px;
+  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card_body table tbody {
+  width: fit-content;
+}
+.card_body td {
+  padding-left: 10px;
+  white-space: break-word;
+}
+
+.card_body tbody tr span {
+  color: #000000;
+  font-weight: 500;
+}
+.card_body table tbody th {
+  color: #000000;
+
+  vertical-align: top;
+  width: 150px;
+}
+.card_body table tbody td {
+  width: 250px;
+  white-space: pre-wrap;
+}
+
+
+.card_body .Submissionbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_body .Submissionbox select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+/* 
+.btn2_EJS:hover {
+  background-color: #555;
+  color: #fff;
+} */
+
+/* .card_body {
+   height: 40rem;
+} */
+
+/* For mobile screens */
+@media screen and (max-height: 700px) {
+  .card_EJS {
+   
+    margin-top: 2rem;
+    height: 85vh;
+  }
+
+  .tbody {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-height: 750) {
+  .back-button {
+    margin-left: 1%;
+  }
+}
+.editjobs{
+  max-height:90% !important;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 542px) {
+
+body.barside2 .statusleft,body.barside2 .card_EJS
+   {
+    display: none ;
+  }
+  body.active .statusleft,body.active .buttons2,body.active .card_EJS
+  {
+ 
+     display:flex !important;
+ 
+  }
+  .statusleft{
+    display: flex;
+    justify-content: left;
+    margin: 15px 0px;
+
+
+  }
+
+  .card_body table tbody th {
+    color: #000000;
+    vertical-align: top;
+    width: 150px;
+    font-size: 15px;
+}
+.card_body table tbody td{
+  font-size: 15px;
+}
+  .card_EJS {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    height: 70%;
+    margin-top: 3rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    width: 90%;
+    overflow: auto;
+  }
+}

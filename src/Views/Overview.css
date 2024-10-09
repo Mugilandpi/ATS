@@ -1,0 +1,261 @@
+.card-containers {
+    display: flex;
+}
+
+.card_new {
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.recharts-wrapper {
+    /* width: 100% !important; */
+    height: 100% !important;
+}
+
+/* #radarChart {
+
+   box-sizing: border-box;
+   display: block;
+   height: 500px; 
+   width: 1028px;
+} */
+/* #min-budget-gauge text {
+   font-size: 1px !important;
+} */
+svg.recharts-surface {
+    margin-bottom: 10%;
+}
+
+.custom-tooltip {
+    background-color: #fff;
+    /* White background color */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    border-radius: 4px;
+    /* Rounded corners */
+    padding: 10px;
+    /* Padding inside the tooltip */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+    font-size: 14px;
+    /* Font size for text */
+    color: #333;
+    /* Text color */
+}
+
+
+
+.custom-tooltip .intro {
+    margin-top: 5px;
+    /* Margin between label and introduction */
+}
+
+.custom-tooltip .desc {
+    margin-top: 5px;
+    /* Margin between introduction and description */
+}
+
+/* 
+.text-group text {
+   font-size: 20px !important;
+   fill: rgb(0, 0, 0);
+   text-anchor: middle;
+} */
+
+.bullet-points {
+    color: black;
+    text-align: left;
+}
+
+.bullet-points ul {
+    list-style: none;
+    /* Remove default list styling */
+    padding-left: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.bullet-points li {
+    margin-bottom: 8px;
+    /* Space between list items */
+    position: relative;
+    /* Allow positioning of bullet */
+    padding-left: 20px;
+    /* Space for the bullet */
+}
+
+.bullet-points li::before {
+    content: '\2605';
+    /* Bullet point character */
+    position: absolute;
+    left: 0;
+    color: green;
+    /* Bullet color */
+    font-size: 20px;
+    /* Bullet size */
+}
+
+.learningattitude tbody tr th {
+    color: #ffffff;
+    background: #32406d;
+    font-size: 15px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.learningattitude tbody tr td {
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 10px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 700px;
+}
+
+.learningattitude tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.input_fieldanal {
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    width: 150px;
+}
+
+.drop_downanal {
+    padding-left: 4px;
+    height: auto;
+    max-height: 160px;
+    width: 169px;
+    overflow: auto;
+    border-radius: 4px;
+    background-color: white;
+    position: absolute
+}
+
+.clientanal {
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    width: 250px;
+}
+
+.resumeanal {
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    width: 250px;
+}
+.buttonss{
+   width: 100%;
+    margin-left: 15px;
+     margin-top: 30px;
+
+}
+.button_ss {
+    border-radius: 4px;
+    background: #32406D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    min-width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ss_formanal {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.candianaly {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: 60px;
+}
+
+@media only screen and (max-width: 542px) {
+    .card-containers {
+        flex-direction: column;
+
+    }
+
+    .analy {
+        overflow: auto;
+    }
+
+    #ss_formanal {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .clientanal{
+       margin-bottom: 5px;
+    }
+    .candianaly {
+       flex-direction: column;
+       margin-left: 0px;
+    }
+    .buttonss{
+       margin-top: 10px;
+    }
+    .button_ss{
+       margin-left: 20%;
+    }
+    .input_fieldanal{
+       margin-left: 20%;
+       margin-bottom: 5px;
+    }
+    .analabel{
+       margin-left: 20%;
+    }
+    body.active #ss_formanal,body.active .analy{
+       display: block !important;
+    }
+    body.barside2 #ss_formanal,body.barside2 .analy{
+       display:none;
+    }
+}
+
+.ss_formanal {
+    background: rgba(255, 255, 255, 0.25);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(11.5px);
+      -webkit-backdrop-filter: blur(11.5px);
+      border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+ 
+    border-radius: 5px;
+    padding: 20px;
+    /* width: 25rem; */
+    width: 89%;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 70px;
+}

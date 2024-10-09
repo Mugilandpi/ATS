@@ -1,0 +1,486 @@
+.wrapper {
+  display: flex;
+}
+
+.section {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.cards-container1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 3 columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* .card1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  height:250px;
+  width: 100%;
+} */
+.card1 {
+  width: 100%;
+  overflow: auto;
+  /* Enable scrolling if chart exceeds dimensions */
+  padding: 6px;
+  /* Adjust padding as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  height: 400px;
+}
+
+
+.cards {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  min-width: 100px;
+  height: 85px;
+  margin-right: 20px;
+  overflow: hidden;
+
+
+}
+
+.cards:hover {
+  /* box-shadow: 5px 5px 10px #9c39ff; */
+  transition: box-shadow 0.1s ease-in;
+}
+
+.card-headers {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card-bodys {
+  padding: 10px;
+}
+
+.card-footers {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+canvas {
+  width: auto !important;
+  height: 300px !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  overflow-x: scroll !important;
+}
+
+
+
+/* .dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+} */
+.TA {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 5px;
+  width: 100%;
+  padding: 1px 5px !important;
+}
+
+#candidates-table th:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #32406D;
+  z-index: 3;
+}
+
+#candidates-table td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+#candidates-table th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .cards-container1 {
+    margin-top: 0px !important;
+  }
+
+  .divwrap {
+    padding-top: 30px;
+  }
+
+  #formed_ss {
+    height: auto !important;
+  }
+
+  .toDate {
+    margin-left: -35px !important;
+  }
+
+  #select_recruiters {
+    width: 360px !important;
+    margin-left: -45px !important;
+  }
+
+  .arrowmark {
+    margin-right: -10px !important;
+    margin-top: 0;
+  }
+
+  .daily {
+    margin-left: -34px !important;
+    margin-right: 29px !important;
+  }
+
+  .submissionbtn {
+    margin-left: -20px !important;
+  }
+
+  .divwrap {
+    margin-top: -30px !important;
+  }
+
+  .cards-container1 {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .cards {
+    margin-top: 10px !important;
+  }
+
+  #to_dates {
+    width: 120px !important;
+    margin-left: 40px !important;
+  }
+
+  #from_dates {
+    width: 120px !important;
+    margin-left: -40px !important;
+  }
+
+  .card1 {
+    margin-top: 20px !important;
+  }
+
+  /* #select_clients{
+    width: 90% !important;
+    margin-left:10px !important;
+  } */
+  #select_clients {
+    width: 350px !important;
+    margin-left: -45px !important;
+  }
+
+  #select_Roles {
+    width: 100% !important;
+  }
+
+  .dropdown {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+
+  #select_roles {
+    width: 350px !important;
+    margin-left: -50px !important;
+  }
+
+  .dropdown1 {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+
+  #report {
+    width: 360px !important;
+  }
+
+  #select_recruit {
+    /* margin-left: 60px !important; */
+    width: 360px !important;
+  }
+
+  .recruitselect {
+    margin-top: -60px !important;
+    margin-left: -43px !important
+  }
+
+  .timebtn {
+    margin-top: 90px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: -300px !important;
+  }
+
+  .recruit {
+    margin-top: 0px !important;
+    margin-right: -65px !important;
+  }
+
+  .labels_TA {
+    text-align: center !important;
+    margin-left: -60px !important;
+  }
+
+  .wrapped {
+    flex-wrap: wrap !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .customModalContent {
+    height: 500px !important;
+    width: 400px !important;
+    /* Ensure the width is applied */
+    max-width: none !important;
+    /* Remove any max-width restrictions */
+    min-width: 400px !important;
+    /* Ensure the minimum width is lso set */
+  }
+
+  @media screen and (max-width: 767px) {
+    h3 {
+      font-size: 14px;
+      /* Reduce font size if necessary */
+      margin-right: 10px !important;
+      white-space: nowrap;
+      /* Prevent line breaks */
+      justify-content: center;
+      /* Center text if needed */
+    }
+
+    .h3tag {
+      display: inline-block;
+      /* Ensure the span remains on the same line */
+    }
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:375px) {
+  #to_dates {
+    width: 120px !important;
+    margin-left: 40px !important;
+  }
+
+  #from_dates {
+    width: 120px !important;
+    margin-left: -40px !important;
+  }
+
+  #report {
+    width: 250px !important;
+  }
+
+  #select_recruiters {
+    width: 250px !important;
+  }
+
+  .arrowmark {
+    margin-right: 10px !important;
+    margin-top: 0;
+  }
+  .customModalContent {
+    height: 500px !important;
+    width: 400px !important;
+    /* Ensure the width is applied */
+    max-width: none !important;
+    /* Remove any max-width restrictions */
+    min-width: 400px !important;
+    /* Ensure the minimum width is lso set */
+  }
+
+  #select_clients {
+    width: 250px !important;
+  }
+
+  .dropdown {
+    margin-right: 20px !important;
+    margin-top: 0;
+  }
+
+  #select_roles {
+    width: 250px !important;
+    margin-left: -50px !important;
+  }
+
+  #select_recruit {
+    width: 250px !important;
+  }
+  .dropdown1 {
+    margin-right: 20px !important;
+    margin-top: 0;
+  }
+  .divwrap{
+    margin-left: 0px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  .cards{
+    margin-right: 10px !important;
+    margin-left: -10px !important;
+  }
+  .seldaily{
+    width: 100px !important;
+  }
+}
+
+@media screen and (min-width:375px) and (max-width:425px) {
+  #to_dates {
+    width: 150px !important;
+    margin-left: 40px !important;
+  }
+  .customModalContent {
+    height: 500px !important;
+    width: 600px !important;
+    max-width: none !important;
+    min-width: 400px !important;
+    margin-left: 200px !important;
+  }
+
+  #report {
+    width: 320px !important;
+  }
+
+  #select_recruiters {
+    width: 320px !important;
+  }
+  
+
+  #select_clients {
+    width: 320px !important;
+  }
+
+  .arrowmark {
+    margin-right: 10px !important;
+    margin-top: 0;
+  }
+  .recruit{
+    margin-right: -20px !important;
+    margin-top: 0;
+  }
+
+  #select_recruit {
+    width: 320px !important;
+  }
+
+  .dropdown {
+    margin-right: 20px !important;
+    margin-top: 0;
+  }
+
+  .dropdown1 {
+    margin-right: 20px !important;
+    margin-top: 0;
+  }
+
+  #select_roles {
+    width: 320px !important;
+    margin-left: -50px !important;
+  }
+
+  #from_dates {
+    width: 150px !important;
+    margin-left: -40px !important;
+  }
+  .cards{
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  .button_ss {
+    margin-left: 0px !important;
+  }
+  .divwrap{
+    margin-left: 0px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .seldaily{
+    width: 100px !important;
+  }
+}
+@media screen and (min-width:628px) and (max-width:766px)  {
+  #from_dates {
+    width: 150px !important;
+    margin-left:0px !important;
+  }
+  .button_ss {
+    margin-left: 20px !important;
+  }
+}
+@media screen and (min-width:525px) and (max-width:627px){
+  #from_dates {
+    width: 150px !important;
+    margin-left:0px !important;
+  }
+  .button_ss {
+    margin-left: 20px !important;
+  }
+  #to_dates{
+    width: 150px !important;
+    margin-left:0px !important;
+  }
+   #select_recruiters {
+    margin-left:-10px !important;
+  }
+}
+@media screen and (min-width:425px) and (max-width:520px){
+  #from_dates {
+    width: 170px !important;
+    /* margin-left:0px !important; */
+  }
+  .button_ss {
+    margin-left: 20px !important;
+  }
+  #to_dates{
+    width: 170px !important;
+  }
+  
+}
+@media screen and (min-width:625px) and (max-width:700px){
+  #to_dates{
+    width: 150px !important;
+    margin-left: 0px !important;
+  }
+  #select_recruiters {
+    margin-left: -10px !important;
+  }
+  
+
+}

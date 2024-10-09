@@ -1,0 +1,48 @@
+#details {
+  border: 1px solid #ddd;
+  font-size: 8px;
+  /* margin: auto; */
+  width: 100%;
+}
+
+#th,
+#td {
+  height: 25px;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid #ddd;
+}
+
+#th {
+  text-align: left;
+  width: 160px;
+}
+
+table tbody tr:hover{
+  background-color: #eef2ff;
+ 
+}
+table tbody tr:nth-child(odd):hover {
+  background-color: #eef2ff; /* Change this to the color you want */
+}
+
+
+#tha,
+#tda{
+  height: 25px;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid gray;
+  border-radius:4px;
+}
+
+#tda{
+  font-size:12px;
+}
+
+#tha{
+  text-align: left;
+  width: 160px;
+}

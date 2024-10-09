@@ -1,0 +1,51 @@
+.vertical-timeline-element {
+  word-wrap: break-word;
+}
+
+.timeline-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.vertical-timeline {
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+}
+
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+.vertical-timeline-element-content {
+  max-width: 100%;
+}
+
+
+.vertical-timeline-element-location {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.vertical-timeline-element {
+  margin: -0.5em 0 !important;
+}
+
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: rgb(33, 150, 243) !important;
+}
+
+

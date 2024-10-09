@@ -1,0 +1,97 @@
+.wrapper .section .top_navbar {
+  /* background: rgb(7, 105, 185); */
+  /* background: #161621; */
+  background: #ffffff;
+  position: fixed;
+  width: 102%;
+  max-width: 200%;
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  margin-left: -38px;
+  margin-top: -20px;
+}
+
+.wrapper .section .top_navbar .hamburger a {
+  font-size: 28px;
+  color: #cad1ff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover {
+  color: #0a0a0a;
+}
+
+.wrapper .section .top_navbar .heading {
+  margin-left: 10px;
+}
+
+.wrapper .section .top_navbar .heading h1 {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  /* margin-left: 20px; */
+}
+
+@media screen and (max-width: 767px) {
+  .logo1 img {
+    height: 30px; /* Example smaller height for mobile */
+    margin-left: 10px; /* Adjusted margin for mobile */
+  }
+
+  .heading h1 {
+    white-space: nowrap; 
+    font-size: 14px !important; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+  .top_navbar{
+    width: 106% !important;
+  }
+}
+
+/* Media query for screens between 768px and 1023px (e.g., tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo1 img {
+    height: 40px; 
+    margin-left: 12px; /* Adjusted margin for tablets */
+  }
+
+  .heading h1 {
+    font-size: 24px;
+  }
+}
+
+/* Media query for screens larger than 1023px (e.g., desktop) */
+@media screen and (min-width: 1024px) {
+  .logo1 img {
+    height: 50px; /* Example larger height for desktop */
+  }
+
+  .heading h1 {
+    font-size: 32px; /* Example larger font size for desktop */
+  }
+}
+#title_nav_heading_text {
+  color: rgb(2, 2, 110);
+}
+
+@media screen and (max-height: 700px) and (min-width: 1000px) {
+  .wrapper .section .top_navbar {
+    /* background: rgb(7, 105, 185); */
+    /* background: #161621; */
+    background: #ffffff;
+    position: fixed;
+    width: 102%;
+    max-width: 200%;
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin-left: -55px !important;
+    margin-top: -20px;
+  }
+}
