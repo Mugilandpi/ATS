@@ -716,7 +716,7 @@ const [currentPage, setCurrentPage] = useState(1); // Current page
                             padding: "5px",
                             borderBottom: "1px solid #ddd",
                           }}>
-                                               {candidate.skills}
+                                              {Array.isArray(candidate.skills) ? candidate.skills.join(", ") : "No skills available"}
                           {showItems && showItems[idx] && showItems[idx].skills ? (
                             <div
                               id={"default1"}
