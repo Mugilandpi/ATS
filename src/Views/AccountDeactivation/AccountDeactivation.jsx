@@ -485,7 +485,7 @@ function AccountDeactivation() {
       setToggleDisabled(true); // Disable toggle during API call
 
       const response = await fetch(
-        "https://ats-9.onrender.com/deactivate_user",
+        "http://144.126.254.255/deactivate_user",
         {
           method: "POST",
           headers: {

@@ -153,7 +153,7 @@ const [currentPage, setCurrentPage] = useState(1); // Current page
       }
             if (selectedProfile) {
                 try {
-                    const response = await fetch("https://ats-9.onrender.com/search_resumes", {
+                    const response = await fetch("http://144.126.254.255/search_resumes", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
@@ -195,7 +195,7 @@ const [currentPage, setCurrentPage] = useState(1); // Current page
         // console.log("Fetching resume...");
         try {
           const response = await fetch(
-            `https://ats-9.onrender.com/view_resume_research/${candidate.id}`,
+            `http://144.126.254.255/view_resume_research/${candidate.id}`,
             {
               method: "GET",
             }
@@ -234,7 +234,7 @@ const [currentPage, setCurrentPage] = useState(1); // Current page
         // console.log("Fetching resume...");
         try {
           const response = await fetch(
-            `https://ats-9.onrender.com/view_resume_research/${candidate.candidate_id}`,
+            `http://144.126.254.255/view_resume_research/${candidate.candidate_id}`,
             {
               method: "GET",
             }

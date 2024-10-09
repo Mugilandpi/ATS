@@ -72,7 +72,7 @@ function App() {
   // const fetchTableData = async () => {
   //   try {
   //     const response = await fetch(
-  //       'https://ats-9.onrender.com/dashboard',
+  //       'http://144.126.254.255/dashboard',
   //       {
   //         method: 'POST',
   //         headers: {
@@ -127,7 +127,7 @@ function App() {
   //   console.log('fetching active users')
   //   try {
   //     const response = await fetch(
-  //       "https://ats-9.onrender.com/active_users",
+  //       "http://144.126.254.255/active_users",
   //       {
   //         method: "POST",
   //         headers: {

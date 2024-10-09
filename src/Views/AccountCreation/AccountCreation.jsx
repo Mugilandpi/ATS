@@ -57,7 +57,7 @@ function AccountCreation() {
 
       if (Object.keys(validationErrors).length === 0) {
         try {
-          const response = await fetch("https://ats-9.onrender.com/signup", {
+          const response = await fetch("http://144.126.254.255/signup", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

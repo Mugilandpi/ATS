@@ -67,7 +67,7 @@ const Otp = () => {
       try {
         const response = await fetch(
           // '/api/reset_password',
-          "https://ats-9.onrender.com/reset_password",
+          "http://144.126.254.255/reset_password",
           {
             method: "POST",
             headers: {

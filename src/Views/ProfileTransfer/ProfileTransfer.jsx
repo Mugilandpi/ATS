@@ -415,7 +415,7 @@ function ProfileTransfer() {
       setNoCandidatesError(false);
       try {
         const response = await fetch(
-          "https://ats-9.onrender.com/get_recruiters_candidate",
+          "http://144.126.254.255/get_recruiters_candidate",
           {
             method: "POST",
             headers: {
@@ -500,7 +500,7 @@ function ProfileTransfer() {
       setwaitForSubmission(true);
       try {
         const response = await fetch(
-          "https://ats-9.onrender.com/assign_candidate_new_recuriter",
+          "http://144.126.254.255/assign_candidate_new_recuriter",
           {
             method: "POST",
             headers: {

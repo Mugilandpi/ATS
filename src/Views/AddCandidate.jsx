@@ -229,7 +229,7 @@ function AddCandidate() {
 
         const response = await fetch(
           // "/api/add_candidate",
-          "https://ats-9.onrender.com/add_candidate",
+          "http://144.126.254.255/add_candidate",
           {
             method: "POST",
             headers: {
@@ -353,7 +353,7 @@ function AddCandidate() {
     console.log("candidate_data", candidate_data);
     try {
       const response = await fetch(
-        "https://ats-9.onrender.com/check_candidate",
+        "http://144.126.254.255/check_candidate",
         {
           method: "POST",
           headers: {
@@ -430,7 +430,7 @@ function AddCandidate() {
   //     const fetchData = async () => {
   //         try {
   //             const response = await fetch(
-  //                 'https://ats-9.onrender.com/view_all_jobs', {
+  //                 'http://144.126.254.255/view_all_jobs', {
   //                 method: 'POST',
   //                 headers: {
   //                     'Content-Type': 'application/json'
@@ -483,7 +483,7 @@ function AddCandidate() {
 
       const response = await fetch(
        // "/api/parse_resume",
-         "https://ats-9.onrender.com/parse_resume",
+         "http://144.126.254.255/parse_resume",
         {
           method: "POST",
           headers: {

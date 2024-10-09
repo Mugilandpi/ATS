@@ -233,7 +233,7 @@ function EditJobPosting() {
 
       try {
         const response = await fetch(
-          `https://ats-9.onrender.com/edit_job_post/${job_id}`,
+          `http://144.126.254.255/edit_job_post/${job_id}`,
           {
             method: "POST",
             headers: {
@@ -253,7 +253,7 @@ function EditJobPosting() {
             toast.success(data.message);
             navigate("/JobListing");
 
-            fetch('https://ats-9.onrender.com/send_edit_notifications', {
+            fetch('http://144.126.254.255/send_edit_notifications', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'

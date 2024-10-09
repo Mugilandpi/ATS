@@ -107,7 +107,7 @@ function UpdateCandidate() {
         }
 
         const response = await fetch(
-          `https://ats-9.onrender.com/update_candidate/${item.id}`,
+          `http://144.126.254.255/update_candidate/${item.id}`,
           {
             method: "POST",
             headers: {

@@ -453,7 +453,7 @@ const truncateText = (text, length = 12) => {
   const fetchTableData = async () => {
     console.log("called fetchTableData");
     try {
-      const response = await fetch("https://ats-9.onrender.com/dashboard", {
+      const response = await fetch("http://144.126.254.255/dashboard", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

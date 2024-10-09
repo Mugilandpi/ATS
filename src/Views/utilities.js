@@ -11,7 +11,7 @@ export async function getDashboardData() {
   console.log("calling getDashboardData");
   let response = await fetch(
     //'/api/dashboard', {
-     "https://ats-9.onrender.com/dashboard", {
+     "http://144.126.254.255/dashboard", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -45,7 +45,7 @@ export async function getAllJobs() {
   try {
     const response = await fetch(
       //'/api/view_all_jobs', 
-        "https://ats-9.onrender.com/view_all_jobs",
+        "http://144.126.254.255/view_all_jobs",
        {
         method: "POST",
         headers: {
@@ -73,7 +73,7 @@ export async function getAllRecruitersManagers() {
   try {
     const response = await fetch(
       //'/api/active_users', {
-       "https://ats-9.onrender.com/active_users", {
+       "http://144.126.254.255/active_users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -103,7 +103,7 @@ export async function fetchMeetings() {
     console.log("Calling fetchMeetings");
 
     const response = await fetch(
-      'https://ats-9.onrender.com/get_all_meetings', {
+      'http://144.126.254.255/get_all_meetings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -158,7 +158,7 @@ export async function storedCandidates() {
  // const [alldata, setAlldata] = useState([]);
  console.log("calling storedCandidates");
   try {
-    const response = await fetch("https://ats-9.onrender.com/get_all_candidates", {
+    const response = await fetch("http://144.126.254.255/get_all_candidates", {
         method: "GET",
         headers:{
            "Content-Type": "application/json",

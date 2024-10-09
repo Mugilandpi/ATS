@@ -358,7 +358,7 @@ function Tekspot_Applications() {
     } else if (!waitForSubmission) {
       setwaitForSubmission(true);
       try {
-        const response = await fetch("https://ats-9.onrender.com/analyze_recruitment", {
+        const response = await fetch("http://144.126.254.255/analyze_recruitment", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -665,7 +665,7 @@ function Tekspot_Applications() {
       toast.error("Please select at least one recruiter")
     } else if (!waitForSubmission) {
       setwaitForSubmission(true);
-      const response = await fetch("https://ats-9.onrender.com/time_to_close_position_for_recruiter", {
+      const response = await fetch("http://144.126.254.255/time_to_close_position_for_recruiter", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -1196,7 +1196,7 @@ function Tekspot_Applications() {
     }
     else if (!waitForSubmission) {
       setwaitForSubmission(true)
-      const response = await fetch("https://ats-9.onrender.com/analyze_recruitment", {
+      const response = await fetch("http://144.126.254.255/analyze_recruitment", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

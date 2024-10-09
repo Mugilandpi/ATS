@@ -119,7 +119,7 @@ function RecruitmentLogin() {
       }
 
       try {
-        const response = await fetch('https://ats-9.onrender.com/login/recruiter', {
+        const response = await fetch('http://144.126.254.255/login/recruiter', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

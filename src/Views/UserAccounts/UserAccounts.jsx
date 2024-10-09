@@ -412,7 +412,7 @@ function UserAccounts() {
     try {
       const response = await fetch(
         // 'api/disable_user'
-        "https://ats-9.onrender.com/disable_user",
+        "http://144.126.254.255/disable_user",
         {
           method: "POST",
           headers: {
@@ -447,7 +447,7 @@ function UserAccounts() {
   const fetchUsers = async () => {
     console.log("fetching active users");
     // const response = await fetch(
-    //   "https://ats-9.onrender.com/active_users",
+    //   "http://144.126.254.255/active_users",
     //   {
     //     method: "POST",
     //     headers: {
@@ -595,7 +595,7 @@ function UserAccounts() {
     try {
       const response = await fetch(
         // `api/active_users`,{
-        `https://ats-9.onrender.com/active_users`,
+        `http://144.126.254.255/active_users`,
         {
           method: "POST",
           body: JSON.stringify({

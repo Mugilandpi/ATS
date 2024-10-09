@@ -124,7 +124,7 @@ function SubmissionSummary() {
         setMessage("");
         try {
           const response = await fetch(
-            "https://ats-9.onrender.com/generate_excel",
+            "http://144.126.254.255/generate_excel",
             {
               method: "POST",
               headers: {
@@ -161,7 +161,7 @@ function SubmissionSummary() {
   const handleRecruitersReport = async () => {
     // setModalIsOpen(true);
     try {
-      const response = await fetch("https://ats-9.onrender.com/analyze_recruitment", {
+      const response = await fetch("http://144.126.254.255/analyze_recruitment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

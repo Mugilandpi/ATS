@@ -14,9 +14,9 @@ export default defineConfig({
         // target: "http://vms.makonissoft.com:1919/", //server
         // target: "http://192.168.1.8:5000", // my local
         // target: 'http://192.168.1.14:1919', // Ganesh local
-       //  target: 'https://ats-9.onrender.com', // VenkatTeja
+       //  target: 'http://144.126.254.255', // VenkatTeja
         //  target: 'https://ats-6ofx.onrender.com',
-        target:'https://ats-9.onrender.com',
+        target:'http://144.126.254.255',
         // target: "http://192.168.1.6:5000",
         // my local
         changeOrigin: true,

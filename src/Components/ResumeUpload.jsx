@@ -60,7 +60,7 @@ const ResumeUpload = ({ ResumeModal, handleCloseResume }) => {
       console.log("Payload being sent:", payload);
  
       try {
-        const response = await fetch("https://ats-9.onrender.com/extract_resumes", {
+        const response = await fetch("http://144.126.254.255/extract_resumes", {
           method: "POST",
           headers: {
             'Content-Type': 'application/json',

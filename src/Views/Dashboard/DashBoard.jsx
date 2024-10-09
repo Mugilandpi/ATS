@@ -1051,7 +1051,7 @@ function DashBoard() {
       try {
         const response = await fetch(
           // `api//delete_candidate/${delId}`,{
-          `https://ats-9.onrender.com/delete_candidate/${delId}`,
+          `http://144.126.254.255/delete_candidate/${delId}`,
           {
             method: "POST",
             headers: {
@@ -1096,7 +1096,7 @@ function DashBoard() {
     // console.log("Fetching resume...");
     try {
       const response = await fetch(
-        `https://ats-9.onrender.com/view_resume/${item.id}`,
+        `http://144.126.254.255/view_resume/${item.id}`,
         {
           method: "GET",
         },
@@ -1125,7 +1125,7 @@ function DashBoard() {
 
   const syncEvents = async () => {
     try {
-      const response = await fetch('https://ats-9.onrender.com/sync_events', {
+      const response = await fetch('http://144.126.254.255/sync_events', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -1158,7 +1158,7 @@ function DashBoard() {
     if (!waitForSubmission1) {
       setwaitForSubmission1(true);
       try {
-        const response = await fetch('https://ats-9.onrender.com/create_event', {
+        const response = await fetch('http://144.126.254.255/create_event', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -1211,7 +1211,7 @@ function DashBoard() {
   };
   // const fetchMeetings = async () => {
   //   try {
-  //     const response = await fetch('https://ats-9.onrender.com/get_all_meetings', {
+  //     const response = await fetch('http://144.126.254.255/get_all_meetings', {
   //       method: 'POST',
   //       headers: {
   //         'Content-Type': 'application/json',

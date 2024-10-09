@@ -198,7 +198,7 @@ function EditCandidate() {
         // app.route('/edit_candidate/<int:candidate_id>', methods=['POST'])
         const response = await fetch(
           // `api/edit_candidate/${location.state.id}`,{
-          `https://ats-9.onrender.com/edit_candidate/${location.state.item.id}`,
+          `http://144.126.254.255/edit_candidate/${location.state.item.id}`,
           {
             method: "POST",
             headers: {

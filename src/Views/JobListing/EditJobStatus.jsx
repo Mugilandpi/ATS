@@ -56,7 +56,7 @@ function EditJobStatus() {
       try {
         const response = await fetch(
           // `api/update_job_status/${item.id}`, {
-          `https://ats-9.onrender.com/update_job_status/${item.id}`,
+          `http://144.126.254.255/update_job_status/${item.id}`,
           {
             method: "POST",
             headers: {

@@ -191,7 +191,7 @@ function OverView() {
                 resume: base64String,
             };
 
-            const response = await fetch("https://ats-9.onrender.com/candidate_over_view", {
+            const response = await fetch("http://144.126.254.255/candidate_over_view", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

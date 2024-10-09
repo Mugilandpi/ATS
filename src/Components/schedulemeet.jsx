@@ -143,7 +143,7 @@ const ScheduleMeet = ({ interviewModal, InterviewcloseModal, start_autoDate,
 
   const syncEvents = async () => {
     try {
-      const response = await fetch('https://ats-9.onrender.com/sync_events', {
+      const response = await fetch('http://144.126.254.255/sync_events', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -176,7 +176,7 @@ const ScheduleMeet = ({ interviewModal, InterviewcloseModal, start_autoDate,
     if (!waitForSubmission1) {
       setwaitForSubmission1(true);
       try {
-        const response = await fetch('https://ats-9.onrender.com/create_event', {
+        const response = await fetch('http://144.126.254.255/create_event', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

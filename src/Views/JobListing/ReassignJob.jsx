@@ -73,7 +73,7 @@ function ReassignJob() {
     try {
       const response = await axios.post(
         // `api/assign_job/${id}`, {
-        `https://ats-9.onrender.com/assign_job/${id}`,
+        `http://144.126.254.255/assign_job/${id}`,
         {
           user_id: localStorage.getItem("user_id")
             ? localStorage.getItem("user_id")

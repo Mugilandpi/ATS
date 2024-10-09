@@ -218,7 +218,7 @@ function Register() {
       }
       try {
         const response = await fetch(
-          "https://ats-9.onrender.com/signup-onetime",
+          "http://144.126.254.255/signup-onetime",
           // '/api/signup-onetime',
           {
             method: "POST",

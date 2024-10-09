@@ -247,7 +247,7 @@ console.log(recruiters,"allrecruiters")
         console.log("job post Request Body:", body_data); // Add this line for debugging
  
         const response = await fetch(
-            "https://ats-9.onrender.com/post_job", {
+            "http://144.126.254.255/post_job", {
         // "/api/post_job", {
           method: "POST",
           // mode: "no-cors",
@@ -270,7 +270,7 @@ console.log(recruiters,"allrecruiters")
             navigate("/JobListing");
           // console.log("calling send maisl endpoint")
             fetch(
-               'https://ats-9.onrender.com/send_notifications', {
+               'http://144.126.254.255/send_notifications', {
               //'/api/send_notifications', {
               method: 'POST',
               headers: {

@@ -52,7 +52,7 @@ function ForgotPassword() {
       try {
         const response = await fetch(
           // '/api/generate_otp', {
-          "https://ats-9.onrender.com/generate_otp",
+          "http://144.126.254.255/generate_otp",
           {
             method: "POST",
             headers: {

@@ -103,7 +103,7 @@ function AssignedRequirements() {
     console.log("Fetching jd_file...");
     try {
       const response = await fetch(
-        `https://ats-9.onrender.com/view_jd/${item.id}`,
+        `http://144.126.254.255/view_jd/${item.id}`,
         {
           method: "GET",
         },
@@ -824,7 +824,7 @@ function AssignedRequirements() {
         console.log("job post Request Body:", body_data); // Add this line for debugging
  
         const response = await fetch(
-          "https://ats-9.onrender.com/check_resume_match", {
+          "http://144.126.254.255/check_resume_match", {
           // "api/check_resume_match", {
           method: "POST",
           // mode: "no-cors",

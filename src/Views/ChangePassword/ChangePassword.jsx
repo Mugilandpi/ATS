@@ -102,7 +102,7 @@ const ChangePassword = () => {
         // }
         try {
           const response = await fetch(
-            "https://ats-9.onrender.com/change_password", // Your API endpoint
+            "http://144.126.254.255/change_password", // Your API endpoint
             {
               method: "POST",
               headers: {

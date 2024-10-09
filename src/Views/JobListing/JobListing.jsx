@@ -559,7 +559,7 @@ function JobListing() {
       try {
         const response = await fetch(
           //`api/delete_job_post/${id}`, {
-           `https://ats-9.onrender.com/delete_job_post/${id}`,
+           `http://144.126.254.255/delete_job_post/${id}`,
            {
             method: "POST",
             headers: {
@@ -854,7 +854,7 @@ function JobListing() {
     try {
       const response = await fetch(
         
-        `https://ats-9.onrender.com/view_jd/${item.id}`,
+        `http://144.126.254.255/view_jd/${item.id}`,
         {
           method: "GET",
         },

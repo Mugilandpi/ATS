@@ -401,7 +401,7 @@ const LeftNav = forwardRef(({ }, ref) => {
 
       try {
         const response = await fetch(
-          `https://ats-9.onrender.com/delete_event`, // Your endpoint
+          `http://144.126.254.255/delete_event`, // Your endpoint
           {
             method: "POST",
             headers: {
@@ -555,7 +555,7 @@ const LeftNav = forwardRef(({ }, ref) => {
   const fetchUserProfileImage = async () => {
     try {
       const response = await fetch(
-        `https://ats-9.onrender.com/user_image/${localStorage.getItem("user_id")}`,
+        `http://144.126.254.255/user_image/${localStorage.getItem("user_id")}`,
         {
           method: "GET",
         },
@@ -632,7 +632,7 @@ const LeftNav = forwardRef(({ }, ref) => {
 
   const handleConfirmLogout = async (identify) => {
     try {
-      const response = await fetch("https://ats-9.onrender.com/logout", {
+      const response = await fetch("http://144.126.254.255/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -703,7 +703,7 @@ const LeftNav = forwardRef(({ }, ref) => {
 
     try {
       const response = await fetch(
-        `https://ats-9.onrender.com/delete_user_image/${localStorage.getItem("user_id")}`,
+        `http://144.126.254.255/delete_user_image/${localStorage.getItem("user_id")}`,
         {
           method: "POST",
           headers: {
@@ -796,7 +796,7 @@ const LeftNav = forwardRef(({ }, ref) => {
     const id = localStorage.getItem("user_id");
     try {
       const response = await fetch(
-        `https://ats-9.onrender.com/jobs_notification/${id}`,
+        `http://144.126.254.255/jobs_notification/${id}`,
         {
           method: "GET",
           headers: {
@@ -826,7 +826,7 @@ const LeftNav = forwardRef(({ }, ref) => {
     const id = localStorage.getItem("user_id");
     try {
       const response = await fetch(
-        `https://ats-9.onrender.com/checked_jobs_notification/${id}`,
+        `http://144.126.254.255/checked_jobs_notification/${id}`,
         {
           method: "POST",
           headers: {
@@ -930,7 +930,7 @@ const LeftNav = forwardRef(({ }, ref) => {
       // console.log("Base64 Image String:", typeof base64Image);
 
       const response = await fetch(
-        `https://ats-9.onrender.com/upload_user_image/${localStorage.getItem("user_id")}`,
+        `http://144.126.254.255/upload_user_image/${localStorage.getItem("user_id")}`,
         {
           method: "POST",
           headers: {
@@ -1039,7 +1039,7 @@ const LeftNav = forwardRef(({ }, ref) => {
       console.log("job post Request Body:", body_data);
 
       const response = await fetch(
-        "https://ats-9.onrender.com/generate_questions", {
+        "http://144.126.254.255/generate_questions", {
         // "api/generate_questions", {
         method: "POST",
         // mode: "no-cors",
@@ -1104,7 +1104,7 @@ const LeftNav = forwardRef(({ }, ref) => {
 
       try {
         // Send the request
-        const response = await fetch("https://ats-9.onrender.com/update_event", {
+        const response = await fetch("http://144.126.254.255/update_event", {
           method: 'POST', // Method should be 'POST' if you're creating or updating the resource
           headers: {
             'Content-Type': 'application/json',
@@ -1159,7 +1159,7 @@ const LeftNav = forwardRef(({ }, ref) => {
   //   };
 
   //   try {
-  //     const response = await fetch(`https://ats-9.onrender.com/update_event/${selectedEvent.id}`, {
+  //     const response = await fetch(`http://144.126.254.255/update_event/${selectedEvent.id}`, {
   //       method: 'POST',
   //       headers: {
   //         'Content-Type': 'application/json',
